@@ -1,0 +1,39 @@
+{
+  "name": "mvc_techblog",
+  "version": "1.0.0",
+  "description": "mysql db and cms styl blog Built using MySQL2, Express, Sequelize, Handlebars and dotenv.",
+  "main": "server.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/queen-stack/mvc_techblog.git"
+  },
+  "keywords": [
+    "MySQL2",
+    "Express",
+    "Sequelize",
+    "Handlebars",
+    "and",
+    "dotenv",
+    "tech",
+    "blog"
+  ],
+  "author": "Jenifer Queen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/queen-stack/mvc_techblog/issues"
+  },
+  "homepage": "https://github.com/queen-stack/mvc_techblog#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "connect-session-sequelize": "^7.0.4",
+    "dotenv": "^8.2.0",
+    "express-handlebars": "^5.1.0",
+    "express-session": "^1.17.1",
+    "mysql2": "^2.2.5",
+    "sequelize": "^6.3.5"
+  }
+}
