@@ -1,8 +1,4 @@
-# mvc_techblog
-
 <h1 align="center">MVC Tech Blog</h1>
-  
-
   
 <p align="center">
     <img src="https://img.shields.io/badge/javascript-yellow" />
@@ -116,7 +112,7 @@ With Nodemon:
 outline testing setup with Jest
 
 ## Contributing
-:octocat: [Jenifer QUeen](https://github.com/queen-stack)
+:octocat: [Jenifer Queen](https://github.com/queen-stack)
 
 ## Questions
 ✉️ Contact me with any questions: [email](mailto:jenf_queen@yahoo.com) , [GitHub](https://github.com/queen-stack)<br />
