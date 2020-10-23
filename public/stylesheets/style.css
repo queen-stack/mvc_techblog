@@ -48,7 +48,7 @@ textarea:focus, input:focus {
 textarea {
   min-width: 40%;
   min-height: 100px;
-}
+  }
 
 form > div {
   margin-bottom: 2%;
@@ -162,3 +162,4 @@ footer {
     display:flex;
     flex-direction: column;
 }
+

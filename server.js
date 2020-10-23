@@ -17,7 +17,11 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 const sess = {
   secret: 'Super secret secret',
-  cookie: {},
+  cookie: {
+    //Session to expire in approx 10 min.  
+    maxAge: 10 * 60 * 1000
+  
+  },
   resave: false,
   saveUninitialized: true,
   store: new SequelizeStore({
