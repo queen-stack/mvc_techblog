@@ -8,19 +8,26 @@ const path = require('path');
 const app = express();
 const PORT = process.env.PORT || 3001;
 
+const handlebarsHelpers = require('./utils/helpers');
+const exphbs = hbs({helpers: handlebarsHelpers});
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
-app.use(
-  session({
-    secret: "asfd09aq8w7r",
-    db: sequelize,
-    resave: false,
+
+const sess = {
+  secret: 'Super secret secret',
+  cookie: {},
+  resave: false,
+  saveUninitialized: true,
+  store: new SequelizeStore({
+    db: sequelize
   })
-);
+};
+
+app.use(session(sess));
 app.use(routes);
-app.engine('handlebars', hbs());
+app.engine('handlebars', exphbs);
 app.set('view engine', 'handlebars');
 
 // turn on connection to db and server
