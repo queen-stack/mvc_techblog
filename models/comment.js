@@ -11,22 +11,22 @@ Comment.init(
         allowNull: false,
         autoIncrement: true
       },
-      // user_id: {
-      //   type: DataTypes.INTEGER,
-      //   allowNull: false,
-      //   references: {
-      //     model: 'user',
-      //     key: 'id'
-      //   }
-      // },
-      // post_id: {
-      //   type: DataTypes.INTEGER,
-      //   allowNull: false,
-      //   references: {
-      //     model: 'post',
-      //     key: 'id'
-      //   }
-      // },
+      user_id: {
+        type: DataTypes.INTEGER,
+        allowNull: false,
+        references: {
+          model: 'user',
+          key: 'id'
+        }
+      },
+      post_id: {
+        type: DataTypes.INTEGER,
+        allowNull: false,
+        references: {
+          model: 'post',
+          key: 'id'
+        }
+      },
       comment_text: {
         type: DataTypes.STRING,
         allowNull: false,
@@ -39,7 +39,7 @@ Comment.init(
     sequelize,
     freezeTableName: true,
     underscored: true,
-    modelName: 'Comment'
+    modelName: 'comment'
   }
 );
 

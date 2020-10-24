@@ -63,7 +63,7 @@ router.get('/', withAuth, (req, res) => {
         },
         {
           model: User,
-          aattributes: ['username', 'twitter', 'github']
+          attributes: ['username', 'twitter', 'github']
         }
       ]
     })
