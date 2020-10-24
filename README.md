@@ -17,9 +17,11 @@
 
 **[Deployed Application](https://_)**
   
-💻 Below is a screenshot of the application:
+💻 Below are screenshots of the application:
   
-![technically speaking: a tech blog](_.PNG)
+![create sign up: a tech blog](./public/stylesheets/images/create_acct.png)
+![login: a tech blog](./public/stylesheets/images/login.png)
+![homepage: a tech blog](./public/stylesheets/images/homepage.png)
 
 ## User Story
 
@@ -88,7 +90,7 @@ THEN I am automatically signed out of the site
 ## Backend Usage
 💻   
   
-Run the following command at the root of your project and answer the prompted questions:
+Run the following command at the root of  project and answer the prompted questions:
 
 `mysql -uroot -p`
 
