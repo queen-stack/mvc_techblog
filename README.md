@@ -85,7 +85,7 @@ THEN I am automatically signed out of the site
 
 `npm install`
   
-## Usage
+## Backend Usage
 💻   
   
 Run the following command at the root of your project and answer the prompted questions:
@@ -98,21 +98,22 @@ Enter PW when promted
 
 `quit`
 
-`npm run seed`
-  
 `npm start`
 
-With Nodemon:
+## Frontend Usage
+💻 
+`required login to create a blog: username, email, github, password`
 
-`npm run watch`
+`Homepage displays all users blogs with title.  User can select to create a post, navigate to dashboard of all blogs user has created.  User can Comment on other Users Blogs.  User can see date and contact details for other bloggers  `
+
+`Dashboard allows user to edit post, save edits made or delete post.`
+`If a deletion is done from the blog - this is not able to be reversed! Blogger beware!`
 
 ## Testing
-✏️
-
-outline testing setup with Jest
+* outline testing setup with Jest
 
 ## Contributing
 :octocat: [Jenifer Queen](https://github.com/queen-stack)
 
 ## Questions
-✉️ Contact me with any questions: [email](mailto:jenf_queen@yahoo.com) , [GitHub](https://github.com/queen-stack)<br />
+✉️ Contact me with any questions: [email](mailto:jenf_queen@yahoo.com) , [GitHub](https://github.com/queen-stack)<br/>
