@@ -2,9 +2,9 @@ const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 const bcrypt = require('bcrypt');
 
-// create  User model
+// create our User model
 class User extends Model {
-    // set up method to run data (by user) to check password
+    // set up method to run on instance data (per user) to check password
     checkPassword(loginPw) {
         return bcrypt.compareSync(loginPw, this.password);
     }
@@ -49,15 +49,7 @@ User.init(
           validate: {
             len: [4]
           }
-        }, 
-        user_id: {
-          type: DataTypes.INTEGER,
-          references: {
-            model: 'user',
-            key: 'id'
-          }
         }
-
       },
   {
       hooks: {
@@ -73,12 +65,11 @@ User.init(
         }
       },
 
-    
     sequelize,
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'User'
+    modelName: 'user'
   }
 );
 
